@@ -14,9 +14,7 @@ export const getWallet=async (dispatch,networkSelect,webProvider ,Provider)=>{
         await dispatch(GetAddress({
             IsLogin : true,
             Address:Address[0]
-        }))
-
-        
+        }))        
         
     }
     catch(error){

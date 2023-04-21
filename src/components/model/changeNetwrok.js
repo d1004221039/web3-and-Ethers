@@ -7,7 +7,6 @@ export const changeNetwrok= async(_network,dispatch,Provider)=>{
     const Network = NetWrokData[_network]
     const chainId= Network.chainId =="0x1" && Provider=="Binance Wallet" ? "0x01":Network.chainId.toString()    
     try {
-        console.log("chainId",chainId,"Provider",Provider)
         if(Provider == "MetaMask"){
             await window.ethereum.request({
                 method: 'wallet_switchEthereumChain',
@@ -35,8 +34,7 @@ export const changeNetwrok= async(_network,dispatch,Provider)=>{
         }       
         dispatch(GetNetwork(Network.chainId))
     } catch (switchError) {
-        console.log(switchError)
-        console.log(switchError.code)
+        console.log(switchError)     
         if (switchError.code == 4902) {
             try {
                 await window.ethereum.request({
