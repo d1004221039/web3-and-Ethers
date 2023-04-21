@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/web3-and-Ethers/static/css/main.dc681876.css",
+    "main.js": "/web3-and-Ethers/static/js/main.d77659eb.js",
+    "static/js/787.58360814.chunk.js": "/web3-and-Ethers/static/js/787.58360814.chunk.js",
+    "static/media/Icon-01-snake-old.webp": "/web3-and-Ethers/static/media/Icon-01-snake-old.db19a5b73369f9d64257.webp",
+    "index.html": "/web3-and-Ethers/index.html",
+    "main.dc681876.css.map": "/web3-and-Ethers/static/css/main.dc681876.css.map",
+    "main.d77659eb.js.map": "/web3-and-Ethers/static/js/main.d77659eb.js.map",
+    "787.58360814.chunk.js.map": "/web3-and-Ethers/static/js/787.58360814.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.dc681876.css",
+    "static/js/main.d77659eb.js"
+  ]
+}
