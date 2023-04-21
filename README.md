@@ -1,70 +1,54 @@
-# Getting Started with Create React App
+# 如何開始
+- 安裝
+```
+npm i 
+```
+- 啟動
+```
+npm run start
+```
+- 建議使用Binance Smart Chain Testnet 進行測試
+- 測試幣取得 https://testnet.bnbchain.org/faucet-smart
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# 實現功能
+## 首頁
+- 登入幣安及MetaMask錢包
+- 取得幣安及MetaMask錢包地址
+- 登入後切換幣安及MetaMask錢包的netWrok
 
-## Available Scripts
+## 進入頁面後
+- 取得幣安及MetaMask錢包，在該network的指定token(ERC20、主幣)的餘額數量
+- MetaMask 可以點擊新增未在錢包內的token(ERC20) [目前幣安不支援]
+- 進行幣安及MetaMask錢包ERC20的轉帳交易
 
-In the project directory, you can run:
+## 監聽
+- 幣安及MetaMask錢包可以監聽使用者自行切換network
+- MetaMask錢包可以監聽使用者自行登出 [目前幣安不支援]
 
-### `npm start`
+## 組件區分
+- NavComponenst 
+    1. 基本錢包api都在此完成(錢包監聽、切換及新增network功能)
+    2. 需要用到套件功能已web3為主(抓取錢包地址)
+    3. 登入/登出
+    4. 實現選擇錢包功能(MetaMask、幣安錢包)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- 頁面Web3JS/EthersJS
+    1. 實現選擇不同區塊鍊套件
+    2. 完成交易轉帳
+    3. 選擇該鍊貨幣抓取餘額並交易
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 其他套件使用
+- React Router
+    - 路由功能
+- Redux
+    - 存取登入狀態、錢包地址、Provider(選擇的錢包)、Network
+- React icons
 
-### `npm test`
+## 目前幣安不支援功能
+- 監聽使用者錢包登出
+- 新增token
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## 沒做的功能
+- 使用者自行變更帳戶監聽

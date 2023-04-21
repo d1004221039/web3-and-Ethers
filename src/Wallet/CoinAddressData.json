@@ -1,0 +1,76 @@
+{
+    
+    "0x38":{        
+        "chainName":"BNB Smart Chain",
+        "BNB":{
+            "address":"主幣"
+        },
+        "ACH":
+        {
+            "address":"0xBc7d6B50616989655AfD682fb42743507003056D",
+            "symbol":"ACH",
+            "decimals":"18",
+            "image":""
+        },
+        "ADX":{
+            "address":"0x6bfF4Fb161347ad7de4A625AE5aa3A1CA7077819",
+            "symbol":"ADX",
+            "decimals":"18",
+            "image":""
+        },
+        "ALICE":{
+            "address":"0xAC51066d7bEC65Dc4589368da368b212745d63E8",
+            "symbol":"ALICE",
+            "decimals":"",
+            "image":""
+        }
+    },
+    "0x1":{        
+        "chainName":"Ethereum Mainnet",
+        "ETH":{
+            "address":"主幣"
+        },
+        "USDT":{
+            "address":"0xdAC17F958D2ee523a2206206994597C13D831ec7",
+            "symbol":"USDT",
+            "decimals":"18",
+            "image":""
+        },
+        "CAKE":{
+            "address":"0x152649eA73beAb28c5b49B26eb48f7EAD6d4c898",
+            "symbol":"CAKE",
+            "decimals":"18",
+            "image":""
+        },
+        "DAI":{
+            "address":"0x6B175474E89094C44Da98b954EedeAC495271d0F",
+            "symbol":"DAI",
+            "decimals":"18",
+            "image":""
+        }
+    },
+    "0x61":{
+        "chainName":"BNB Smart Chain Test Network",
+        "BNB": {
+            "address":"主幣"
+        },
+        "USDT": {
+            "address":"0x337610d27c682E347C9cD60BD4b3b107C9d34dDd",
+            "symbol":"USDT",
+            "decimals":"18",
+            "image":""
+        },
+        "CAKE": {
+            "address":"0xEdF4C09A91E7c0959bbaDCdf02457E8c3D3e6822",
+            "symbol":"CAKE",
+            "decimals":"18",
+            "image":""
+        },
+        "DAI": {
+            "address":"0x5D69a63bBe8e6144aE01DfBC297aa4aDc4932b55",
+            "symbol":"DAI",
+            "decimals":"18",
+            "image":""
+        }
+    }
+}
